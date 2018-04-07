@@ -2,15 +2,20 @@ from helper_methods import least_common_multiple
 
 
 def sum_of_multiples(maximum, divisor_one, divisor_two):
-    """(int, int, int) -> int
-    The function takes a maximum and 2 ints. Returns sum of all multiples of divisor_one and divisor_two less
+    """
+    Function returns sum of all multiples of divisor_one and divisor_two less
     than or equal to the maximum.
 
     Uses the principle of summation from 1 to n ( n(n+1)/2 ), therefore the sum of all multiples
-    of k to m is ( km(m+1)/2 ), where m is the number of times k goes into the max (n)
+    of k to m is ( km(m+1)/2 ), where m is the number of times k goes into the max (n).
 
     REQ: max, divisor_one, divisor_two >= 1
     REQ: max, divisor_one, divisor_two are whole integers
+
+    :param maximum: {int} is maximum int to sum to
+    :param divisor_one: {int} is first multiple to sum
+    :param divisor_two: {int} is second multiple to sun
+    :return: {int} sum of all multiples of divisor_one and divisor_two to maximum
     """
 
     # get whole number of times each divisor goes into max
