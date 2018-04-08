@@ -10,6 +10,10 @@ def smallest_continuous_multiple(max_multiple):
 
     :param max_multiple: {int}
     :return: smallest natural number evenly divisible by all number less than or equal to input
+
+    Function reduces time complexity by iteratively removing redundant factors from the
+    check_list, ie. suppose 12 exists in the list, then 6, 4, 3, 2 and 1 will have been removed.
+    This check is done to remove the factors of every int, to reduce the lookup time later.
     """
 
     # all numbers less than or equal to 2 are evenly divisible by themselves and below
@@ -21,7 +25,7 @@ def smallest_continuous_multiple(max_multiple):
     for i in range(max_multiple):
         check_list.append(i + 1)
 
-    # loop through check list backwords
+    # loop through check list backwards
     for i in reversed(check_list):
         # get factors of i without i included
         temp_factors = factors(i)
@@ -33,8 +37,7 @@ def smallest_continuous_multiple(max_multiple):
             except ValueError:
                 pass
 
-    # double input to start for efficiency (this won't ever miss correct output)
-    temp_num = max_multiple * 2
+    temp_num = max_multiple
     # loop indefinitely until find smallest int that that satisfies exit condition
     while True:
         # if all factors less than max_multiple divide evenly into curr, return

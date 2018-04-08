@@ -5,8 +5,12 @@ def largest_prime_factor(input_num):
     REQ: input_num >= 0 and whole
 
     :param input_num: {int} is original input number
-    :return: {int} the largest prime factor of the input
+    :return: {int} the largest prime factor of the input or {NoneType} if input_num < 2
     """
+
+    # if input is less than 2, there are no prime factors less than 2, return None
+    if input_num < 2:
+        return None
 
     # set current lowest prime to lowest prime factor (2)
     curr_lpf = 2
