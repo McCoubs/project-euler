@@ -7,8 +7,11 @@ if __name__ == "__main__":
     maximum = input("Please enter a maximum number: ")
     divisor_one = input("Please enter your first multiple: ")
     divisor_two = input("Please enter your second multiple: ")
-    # call func with inputs
-    multiple_sum = sum_of_multiples(int(maximum), int(divisor_one), int(divisor_two))
-    # output info to user
-    print("The sum of all multiples of {} and {} less than or equal to {} is {}".format(divisor_one, divisor_two,
-          maximum, multiple_sum))
+    try:
+        # call func with inputs
+        multiple_sum = sum_of_multiples(int(maximum), int(divisor_one), int(divisor_two))
+        # output info to user
+        print("The sum of all multiples of {} and {} less than or equal to {} is {}".format(divisor_one, divisor_two,
+              maximum, multiple_sum))
+    except (TypeError, ValueError) as error:
+        print(error.args)
