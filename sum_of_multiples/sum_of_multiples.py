@@ -1,4 +1,4 @@
-from helper_functions import least_common_multiple
+from helper_functions.least_common_multiple import least_common_multiple
 
 
 def sum_of_multiples(maximum, divisor_one, divisor_two):

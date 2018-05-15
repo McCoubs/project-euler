@@ -1,5 +1,5 @@
 import unittest
-from sum_of_fibonacci import sum_of_fibonacci
+from sum_of_fibonacci.sum_of_fibonacci import sum_of_fibonacci
 
 
 class TestSumOfFibonacci(unittest.TestCase):

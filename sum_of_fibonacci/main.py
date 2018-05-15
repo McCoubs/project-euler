@@ -1,4 +1,7 @@
-from sum_of_fibonacci import sum_of_fibonacci
+import os
+import sys
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from sum_of_fibonacci.sum_of_fibonacci import sum_of_fibonacci
 
 
 if __name__ == "__main__":

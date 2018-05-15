@@ -1,4 +1,4 @@
-from helper_functions import factors
+from helper_functions.get_factors import get_factors
 
 
 def smallest_continuous_multiple(max_multiple):
@@ -28,7 +28,7 @@ def smallest_continuous_multiple(max_multiple):
     # loop through check list backwards
     for i in reversed(check_list):
         # get factors of i without i included
-        temp_factors = factors(i)
+        temp_factors = get_factors(i)
         temp_factors.remove(i)
         # loop through the remaining factors, removing them from the check_list
         for j in temp_factors:

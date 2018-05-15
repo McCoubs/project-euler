@@ -1,5 +1,5 @@
 import unittest
-from sum_square_difference import sum_square_difference
+from sum_square_difference.sum_square_difference import sum_square_difference
 
 
 class TestSumOfMultiples(unittest.TestCase):

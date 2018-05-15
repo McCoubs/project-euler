@@ -1,45 +1,5 @@
 import unittest
-from sum_of_multiples import sum_of_multiples
-from helper_functions import greatest_common_divisor, least_common_multiple
-
-
-class TestGreatestCommonDivisor(unittest.TestCase):
-
-    def test_regular(self):
-        self.assertEqual(greatest_common_divisor(20, 15), 5)
-
-    def test_input_is_return(self):
-        self.assertEqual(greatest_common_divisor(15, 3), 3)
-
-    def test_same_input(self):
-        self.assertEqual(greatest_common_divisor(15, 15), 15)
-
-    def test_one_prime(self):
-        self.assertEqual(greatest_common_divisor(11, 4), 1)
-
-    def test_two_primes(self):
-        self.assertEqual(greatest_common_divisor(11, 7), 1)
-
-
-class TestLeastCommonMultiple(unittest.TestCase):
-
-    def test_regular(self):
-        self.assertEqual(least_common_multiple(4, 3), 12)
-
-    def test_input_is_return(self):
-        self.assertEqual(least_common_multiple(15, 3), 15)
-
-    def test_same_input(self):
-        self.assertEqual(least_common_multiple(15, 15), 15)
-
-    def test_one_prime(self):
-        self.assertEqual(greatest_common_divisor(11, 4), 1)
-
-    def test_two_primes(self):
-        self.assertEqual(greatest_common_divisor(11, 7), 1)
-
-    def test_input_one(self):
-        self.assertEqual(greatest_common_divisor(11, 1), 1)
+from sum_of_multiples.sum_of_multiples import sum_of_multiples
 
 
 class TestSumOfMultiples(unittest.TestCase):

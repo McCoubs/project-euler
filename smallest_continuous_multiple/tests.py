@@ -1,5 +1,5 @@
 import unittest
-from smallest_continuous_multiple import smallest_continuous_multiple
+from smallest_continuous_multiple.smallest_continuous_multiple import smallest_continuous_multiple
 
 
 class TestSmallestContinuousMultiple(unittest.TestCase):

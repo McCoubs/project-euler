@@ -1,4 +1,7 @@
-from smallest_continuous_multiple import smallest_continuous_multiple
+import os
+import sys
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from smallest_continuous_multiple.smallest_continuous_multiple import smallest_continuous_multiple
 
 
 if __name__ == "__main__":

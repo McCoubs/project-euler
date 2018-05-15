@@ -1,4 +1,7 @@
-from largest_prime_factor import largest_prime_factor
+import os
+import sys
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from largest_prime_factor.largest_prime_factor import largest_prime_factor
 
 
 if __name__ == "__main__":
