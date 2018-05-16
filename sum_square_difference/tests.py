@@ -25,7 +25,7 @@ class TestSumOfMultiples(unittest.TestCase):
     def test_ten(self):
         self.assertEqual(sum_square_difference(10), 2640)
 
-    def test_ten(self):
+    def test_hundred(self):
         self.assertEqual(sum_square_difference(100), 25164150)
 
 

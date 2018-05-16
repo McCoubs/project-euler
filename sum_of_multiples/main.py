@@ -1,7 +1,7 @@
 import os
 import sys
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from sum_of_multiples.sum_of_multiples import sum_of_multiples
+from sum_of_multiples import sum_of_multiples
 
 
 if __name__ == "__main__":

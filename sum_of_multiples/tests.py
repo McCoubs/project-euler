@@ -22,10 +22,10 @@ class TestSumOfMultiples(unittest.TestCase):
     def test_zero_input(self):
         self.assertRaises(ValueError, sum_of_multiples, 345, 4, 0)
         
-    def test_one(self):
+    def test_reg_one(self):
         self.assertEqual(sum_of_multiples(1000, 3, 5), 234168)
 
-    def test_two(self):
+    def test_reg_two(self):
         self.assertEqual(sum_of_multiples(20, 4, 5), 90)
 
     def test_same_input(self):
