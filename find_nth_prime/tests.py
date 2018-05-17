@@ -2,7 +2,7 @@ import unittest
 from find_nth_prime.find_nth_prime import find_nth_prime
 
 
-class TestSumOfMultiples(unittest.TestCase):
+class TestFindNthPrime(unittest.TestCase):
 
     def test_string_input(self):
         self.assertRaises(TypeError, find_nth_prime, "string")
