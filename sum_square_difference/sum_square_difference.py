@@ -1,3 +1,6 @@
+from helper_functions.summations import square_summation, summation
+
+
 def sum_square_difference(limit):
     """
     Function returns difference between the sum of the squares up to and including limit and the square of the
@@ -20,9 +23,9 @@ def sum_square_difference(limit):
         raise ValueError("Input param 'limit' was a negative value")
 
     # get square of sum to limit
-    square_of_sum = pow((limit * (limit + 1)) // 2, 2)
+    square_of_sum = pow(summation(limit), 2)
     # get sum of squares to limit
-    sum_of_squares = (limit * (limit + 1) * (2 * limit + 1)) // 6
+    sum_of_squares = square_summation(limit)
 
     # return difference
     return square_of_sum - sum_of_squares

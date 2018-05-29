@@ -2,7 +2,7 @@ def pythagorean_triplets(triplet_sum):
     """
 
     If a, b and c are the Pythagorean triplet, where a <= b <= c, then c = sum - a - b and
-    a <= sum // 3 and b <= (sum // 3) * 2
+    a <= sum // 3 and b <= sum // 2
     :param triplet_sum: {int} is pythagorean sum to find triplets
     :return:
     """
@@ -15,7 +15,7 @@ def pythagorean_triplets(triplet_sum):
 
     # loop to find a, b, and c, these loops will always keep the equality a < b < c satisfied
     for a in range(1, triplet_sum // 3):
-        for b in range(a + 1, (triplet_sum // 3) * 2):
+        for b in range(a + 1, (triplet_sum // 2)):
             c = triplet_sum - a - b
             # if current a, b and c satisfy pythagorean theorem, return each int and their product
             if a * a + b * b == c * c:

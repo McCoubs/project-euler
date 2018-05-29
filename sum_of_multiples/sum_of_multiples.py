@@ -1,4 +1,5 @@
 from helper_functions.least_common_multiple import least_common_multiple
+from helper_functions.summations import summation
 
 
 def sum_of_multiples(maximum, divisor_one, divisor_two):
@@ -33,9 +34,9 @@ def sum_of_multiples(maximum, divisor_one, divisor_two):
     lcm_quotient = maximum // lcm
 
     # get divisor and lcm sums
-    divisor_one_sum = (divisor_one * quotient_one * (quotient_one + 1)) // 2
-    divisor_two_sum = (divisor_two * quotient_two * (quotient_two + 1)) // 2
-    lcm_sum = (lcm * lcm_quotient * (lcm_quotient + 1)) // 2
+    divisor_one_sum = divisor_one * summation(quotient_one)
+    divisor_two_sum = divisor_two * summation(quotient_two)
+    lcm_sum = lcm * summation(lcm_quotient)
 
     # add quotient sums and subtract lcm sum
     return divisor_one_sum + divisor_two_sum - lcm_sum

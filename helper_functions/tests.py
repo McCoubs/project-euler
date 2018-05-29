@@ -3,6 +3,7 @@ from helper_functions.greatest_common_divisor import greatest_common_divisor
 from helper_functions.least_common_multiple import least_common_multiple
 from helper_functions.get_primes import eratosthenes_primes
 from helper_functions.get_factors import get_factors
+from helper_functions.summations import summation, square_summation
 
 
 class TestGreatestCommonDivisor(unittest.TestCase):
@@ -69,6 +70,9 @@ class TestEratosthenesPrimes(unittest.TestCase):
         self.assertEqual(eratosthenes_primes(102), [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61,
                                                     67, 71, 73, 79, 83, 89, 97, 101])
 
+    def test_input_negative(self):
+        self.assertEqual(eratosthenes_primes(-1), [])
+
     def test_input_zero(self):
         self.assertEqual(eratosthenes_primes(0), [])
 
@@ -98,6 +102,40 @@ class TestGetFactors(unittest.TestCase):
 
     def test_input_one(self):
         self.assertEqual(get_factors(1), {1})
+
+
+class TestSummation(unittest.TestCase):
+    def test_negative(self):
+        self.assertEqual(summation(-1), 0)
+
+    def test_zero(self):
+        self.assertEqual(summation(0), 0)
+
+    def test_one(self):
+        self.assertEqual(summation(1), 1)
+
+    def test_small_input(self):
+        self.assertEqual(summation(10), 55)
+
+    def test_large_input(self):
+        self.assertEqual(summation(1000000000), 500000000500000000)
+
+
+class TestSquareSummation(unittest.TestCase):
+    def test_negative(self):
+        self.assertEqual(square_summation(-1), 0)
+
+    def test_zero(self):
+        self.assertEqual(square_summation(0), 0)
+
+    def test_one(self):
+        self.assertEqual(square_summation(1), 1)
+
+    def test_small_input(self):
+        self.assertEqual(square_summation(10), 385)
+
+    def test_large_input(self):
+        self.assertEqual(square_summation(1000000000), 333333333833333333500000000)
 
 
 if __name__ == '__main__':
