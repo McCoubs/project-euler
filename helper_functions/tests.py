@@ -1,9 +1,9 @@
 import unittest
-from helper_functions.greatest_common_divisor import greatest_common_divisor
-from helper_functions.least_common_multiple import least_common_multiple
-from helper_functions.get_primes import eratosthenes_primes
-from helper_functions.get_factors import get_factors
-from helper_functions.summations import summation, square_summation
+from project_euler.helper_functions.greatest_common_divisor import greatest_common_divisor
+from project_euler.helper_functions.least_common_multiple import least_common_multiple
+from project_euler.helper_functions.get_primes import eratosthenes_primes
+from project_euler.helper_functions.get_factors import get_factors
+from project_euler.helper_functions.summations import summation, square_summation
 
 
 class TestGreatestCommonDivisor(unittest.TestCase):

@@ -1,4 +1,4 @@
-from helper_functions.greatest_common_divisor import greatest_common_divisor
+from project_euler.helper_functions.greatest_common_divisor import greatest_common_divisor
 
 
 def least_common_multiple(a, b):

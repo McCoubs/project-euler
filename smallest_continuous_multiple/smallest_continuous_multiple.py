@@ -1,4 +1,4 @@
-from helper_functions.get_factors import get_factors
+from project_euler.helper_functions.get_factors import get_factors
 
 
 def smallest_continuous_multiple(max_multiple):

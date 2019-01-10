@@ -1,5 +1,5 @@
 import math
-from helper_functions.get_primes import eratosthenes_primes
+from project_euler.helper_functions.get_primes import eratosthenes_primes
 
 
 def find_nth_prime(nth_prime):

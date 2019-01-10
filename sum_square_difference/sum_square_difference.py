@@ -1,4 +1,4 @@
-from helper_functions.summations import square_summation, summation
+from project_euler.helper_functions.summations import square_summation, summation
 
 
 def sum_square_difference(limit):

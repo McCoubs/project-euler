@@ -1,5 +1,5 @@
-from helper_functions.least_common_multiple import least_common_multiple
-from helper_functions.summations import summation
+from project_euler.helper_functions.least_common_multiple import least_common_multiple
+from project_euler.helper_functions.summations import summation
 
 
 def sum_of_multiples(maximum, divisor_one, divisor_two):
